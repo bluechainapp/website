@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluechain - $H2O Solana Water Token</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Bluechain is the $H2O token project on Solana focused on providing sustainable water solutions globally. Join our network and support water conservation.">
+    
+    <!-- Meta Keywords for SEO -->
+    <meta name="keywords" content="Bluechain, $H2O token, Solana water project, water conservation, sustainability, blockchain, decentralized governance">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Bluechain - The Solana Water Network">
+    <meta property="og:description" content="The $H2O token project on Solana to promote global water conservation and sustainability.">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:url" content="https://bluechain.app">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bluechain - $H2O Solana Water Token">
+    <meta name="twitter:description" content="Support water sustainability globally with Bluechain’s $H2O token on Solana.">
+    <meta name="twitter:image" content="./img/logo.png">
+    
+    <!-- Linking Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="video-bg" autoplay muted loop>
+        <source src="./img/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Centered content -->
+    <div class="content">
+        <div>
+            <!-- Logo with Alt text for SEO -->
+            <img src="./img/logo.png" alt="Bluechain Project Logo - $H2O Solana Token" class="logo">
+
+            <!-- Contract Address Section -->
+            <div class="contract-address-container">
+                <div class="contract-box">
+                    <span class="contract-address" id="contractAddress">9xQeWvG816vcyptJ2gY6BiwNBRUA14iQv9U66vKHcL8k</span>
+                    <button class="copy-btn" onclick="copyAddress()">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <a href="https://raydium.io" target="_blank" class="buy-btn">Buy</a>
+                </div>
+                <span id="tooltip" class="tooltip">Copied!</span>
+            </div>
+
+            <!-- Social Links as buttons with icons -->
+            <div class="social-links">
+                <a href="https://twitter.com/bluechainapp" target="_blank" class="social-btn" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/bluechainapp" target="_blank" class="social-btn" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://discord.com/invite/bluechainapp" target="_blank" class="social-btn" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <!-- Whitepaper Link -->
+                <a href="https://docs.bluechain.app" target="_blank" class="social-btn" aria-label="Whitepaper">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            navigator.clipboard.writeText(address).then(() => {
+                // Show the tooltip
+                const tooltip = document.getElementById('tooltip');
+                tooltip.classList.add('show');
+                setTimeout(() => {
+                    tooltip.classList.remove('show');
+                }, 2000); // Tooltip disappears after 2 seconds
+            });
+        }
+    </script>
+</body>
+</html>
