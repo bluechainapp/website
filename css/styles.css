@@ -213,7 +213,6 @@ button:hover, .buy-btn:hover {
 @media (max-width: 768px) {
     .logo {
         width: 250px; /* Smaller logo size for small screens */
-        margin-bottom: 15px; /* Adjust bottom margin */
     }
 
     .contract-address-container {
